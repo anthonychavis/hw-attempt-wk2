@@ -3,7 +3,7 @@
 let firstName = 'Anthony',
     lastName = 'Chavis',
     wholeName,
-    sumLetters = 0;
+    sumLettersOfWholeName = 0;
 
 firstName = firstName.toUpperCase();
 lastName = lastName.toLowerCase();
@@ -18,7 +18,7 @@ wholeName.split('').forEach(char => {
         newChar.charCodeAt(0) >= 'a'.charCodeAt(0) &&
         newChar.charCodeAt(0) <= 'z'.charCodeAt(0)
     )
-        sumLetters++;
+        sumLettersOfWholeName++;
 });
 
-console.log(sumLetters);
+console.log(sumLettersOfWholeName);
